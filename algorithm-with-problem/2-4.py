@@ -33,10 +33,11 @@ def num_path(n: int, m: int, map: list):
 def print_path(n: int, m: int, from_: list):
     if m == 0 and n == 0:
         return
-    print(f'{n} {m}')
     if from_[n][m] == 'LEFT':
-        return print_path(n-1, m, from_)
-    return print_path(n, m-1, from_)
+        print_path(n-1, m, from_)
+    else:
+        print_path(n, m-1, from_)
+    print(f'{n} {m}')
 
 
 def test_num():
