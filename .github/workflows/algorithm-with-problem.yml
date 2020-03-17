@@ -13,4 +13,4 @@ jobs:
       - name: Test with pytest
         run: |
           pip install pytest
-          pytest algorithm-with-problem/*_test.py
+          pytest algorithm-with-problem/*.py
