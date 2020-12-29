@@ -39,3 +39,6 @@ jobs:
 
       - name: Test programming Interview
         run: yarn jest programming-interview/*.test.ts
+
+      - name: Test Advent Of Code
+        run: yarn jest advent-of-code
